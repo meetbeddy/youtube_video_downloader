@@ -1,0 +1,14 @@
+.card .card-content p {
+  font-family: "Itim", cursive;
+  font-size: 1em;
+}
+.card .card-content {
+  padding: 10;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .card.horizontal {
+    display: block;
+  }
+}

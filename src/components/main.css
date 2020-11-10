@@ -1,0 +1,77 @@
+* {
+  text-align: center;
+  background-color: rgb(230, 228, 228);
+}
+.main-header {
+  font-family: "Orbitron", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+span.title {
+  color: red;
+}
+.URL-input,
+.convert-button {
+  font-size: 1.3em;
+  padding: 5px 10px;
+}
+input.URL-input {
+  border-radius: 4px 0px 0px 4px;
+  width: 70%;
+  text-align: center;
+  border: 3px solid #eeeeee;
+  color: black;
+
+  outline: none;
+}
+input.URL-input::placeholder {
+  color: black;
+}
+input.URL-input:focus {
+  background-color: rgb(243, 164, 150);
+  border: 2px solid rgb(245, 46, 11);
+}
+.convert-button {
+  border-radius: 0px 4px 4px 0px;
+  border: 2px solid rgb(245, 46, 11);
+  background: rgb(245, 46, 11);
+  color: white;
+  margin-left: 10px;
+  height: 44px;
+}
+.convert-button:hover{
+  background-color: rgb(210, 230, 191);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .main-header {
+    font-family: "Orbitron", sans-serif;
+    font-size: 3rem;
+    columns: red;
+    margin-top: 50px;
+
+    /* border-bottom:3px 3px rgb(10, 10, 10); */
+  }
+
+  input.URL-input {
+    border-radius: 4px 0px 0px 4px;
+    width: 60%;
+    text-align: center;
+    border: 3px solid #eeeeee;
+
+    outline: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
