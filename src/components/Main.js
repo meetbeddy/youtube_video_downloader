@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import "materialize-css/dist/css/materialize.min.css";
 import VideoDetail from "./VideoDetail";
 import Spinner from "./tools/Spinner";
@@ -26,9 +26,12 @@ class Main extends Component {
   };
 
   sendURL = async (url) => {
-    const res = await fetch(`http://localhost:4000/convert?URL=${url}`, {
-      method: "GET",
-    });
+    const res = await fetch(
+      `https://ytube-vid.herokuapp.com/convert?URL=${url}`,
+      {
+        method: "GET",
+      }
+    );
     if (res.ok) {
       const details = await res.json();
       this.setState({
